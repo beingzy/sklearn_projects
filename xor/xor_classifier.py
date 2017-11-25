@@ -9,12 +9,12 @@ from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.svm import LinearSVC
 
-from .utils import gen_xor_data
-from .utils import classifier_evaluation
+from utils import gen_xor_data
+from utils import classifier_evaluation
 
 
 ## =================
-## model building 
+## model building
 ## =================
 sample_data = gen_xor_data(size=1000, random_seed=42)
 xx = sample_data[['x1', 'x2']].as_matrix()
